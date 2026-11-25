@@ -1,0 +1,9 @@
+{
+  "short_name": "Yuwa Shakti",
+  "name": "Shree Yuwa Shakti Club",
+  "icons": [{ "src": "favicon.ico", "sizes": "64x64 32x32 24x24 16x16", "type": "image/x-icon" }],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ff6a1a",
+  "background_color": "#f5f6fb"
+}
