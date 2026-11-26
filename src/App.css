@@ -37,7 +37,7 @@ font-family:Inter,system-ui,sans-serif;color:var(--tx);background:var(--bg);min-
 .row2{display:flex;gap:10px;flex-wrap:wrap}
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0 6px}
 .stat{background:var(--card);border:1px solid var(--bd);border-radius:20px;padding:16px;text-align:center}.stat b{font-family:Sora;font-size:26px;color:var(--p)}.stat div{font-size:12px;color:var(--mu)}
-.sec{margin-top:30px}.sec h2{font-size:22px;margin-bottom:14px;display:flex;justify-content:space-between;align-items:center}.sec h2 a{font-size:14px;color:var(--p);font-family:Inter;font-weight:600;cursor:pointer}
+.sec{margin-top:30px}.sec h2{font-size:22px;margin-bottom:14px;display:flex;justify-content:space-between;align-items:center}.sec h2 a,.sec h2 .more{font-size:14px;color:var(--p);font-family:Inter;font-weight:600;cursor:pointer;background:none;border:0;padding:0}
 .grid{display:grid;gap:14px;grid-template-columns:1fr}
 .card{background:var(--card);border:1px solid var(--bd);border-radius:22px;padding:20px;transition:.2s}.card:hover{border-color:var(--p)}
 .card h3{font-size:17px;margin:8px 0}.card p{color:var(--mu);font-size:14px}.em{font-size:30px}

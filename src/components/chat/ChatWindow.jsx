@@ -1,5 +1,4 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import Avatar from "../common/Avatar";
 import Loader from "../common/Loader";
 import Modal from "../common/Modal";
 import { I } from "../common/Icon";

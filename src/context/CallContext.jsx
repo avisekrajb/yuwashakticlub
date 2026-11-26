@@ -68,10 +68,6 @@ export function CallProvider({ children }) {
   const runtime = useRef({});
   runtime.current = { say, config, me };
 
-  const refreshTracks = useCallback(() => {
-    setTracks(collectTracks(roomRef.current));
-  }, []);
-
   const stopTimer = useCallback(() => {
     if (timerRef.current) clearInterval(timerRef.current);
     timerRef.current = null;
