@@ -148,7 +148,17 @@ export function AppProvider({ children }) {
     setLoading(true);
     setBootError("");
     try {
-      const res = await api.get("/bootstrap");
+      let res;
+      for (let attempt = 0; attempt < 3; attempt += 1) {
+        try {
+          res = await api.get("/bootstrap");
+          break;
+        } catch (err) {
+          // Serverless backends can be cold on the first request; retry briefly.
+          if (err.code !== "NETWORK" || attempt === 2) throw err;
+          await new Promise((resolve) => setTimeout(resolve, 1500 * (attempt + 1)));
+        }
+      }
       const next = {
         users: res.users || [],
         about: res.about || [],
